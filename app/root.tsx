@@ -1,15 +1,16 @@
 import {
   Links,
+  Route,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "react-router";
 
-import type { Route } from "./+types/root";
+import type { LinksFunction } from "react-router";
 import stylesheet from "./app.css?url";
 
-export const links: Route.LinksFunction = () => [
+export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
